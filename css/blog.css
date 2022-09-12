@@ -1,0 +1,152 @@
+* {
+      list-style: none;
+      text-decoration : none;
+      margin :0 ;
+      padding: 0;
+      font-family: 'open sans',sans-serif,arial,verdana,tahoma;
+    }
+#menu-laterale {
+	background-color: #000;
+	width: 250px;
+	height: 100%;
+  padding: 20px 0;
+  position: fixed;
+	left: 0;
+  top: 0;
+  border: 1px solid #FFF;
+}
+#menu-laterale #profile {
+	margin-bottom: 30px;
+	text-align: center;
+	color: #FFF;
+}
+#profile img {
+	display: block;
+	height: 150px;
+	width: 150px;
+	margin: 0 auto;
+	border-radius: 50%;
+	border: 5px solid #FFF;
+}
+#profile p {
+	font-size: 1.5em;
+	margin-top: 2px;
+}
+#profile h3 {
+	font-size: 1.5;
+}
+#menu-laterale ul li a {
+	display: block;
+	padding: 9px;
+	color: #FFF;
+	border-bottom: 1px solid #10558D;
+	font-size: 16px;
+	position: relative ;
+  text-align: center;
+}
+#menu-laterale ul li a:hover ,.active {
+	background-color: #FFF;
+	color: darkblue !important;
+	border-right: 2px solid rgb(5, 68, 104);
+}
+#section {
+  width: calc(100% -250px);
+  margin-left: 250px;
+}
+#section #topBar{
+	background-color: rgb(32,44,69);
+	height: 55px;
+	width: 100%;
+	padding: 0 30px;
+	align-items: center;
+	display: flex;
+}
+#section #topBar a h1 {
+	color: #FFF;
+	font-size: 2.3rem;
+}
+#section #topBar a h1:hover {
+	color: rgba(92,92,252, 0.8);
+}
+#section #banner {
+  background-color: #000;
+  height: 216px;
+  padding: 0 30px;
+  align-items: center;
+  color: #FFF;
+  border: 2px solid #FFF;
+}
+.titre {
+  text-align: center;
+  padding-top: 30px;
+  font-size: 2em;
+}
+.trait {
+  border: 5px solid lightyellow;
+  width: 50%;
+  margin: 10px auto;
+}
+button {
+  height: 6vh;
+  color: rgb(5, 68, 104);
+  font-size: 1.5em;
+  width: 20%;
+  margin: 10px auto;
+  align-items: center;
+  display: block;
+}
+.article1 {
+  height: 250px;
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+  padding: 0 15px;
+}
+.article1 img {
+  width: 230px;
+}
+.article1 .contenu1 {
+    margin-left: 10px;
+    font-size: 1.1em;
+}
+.article2 {
+  height: 250px;
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+  padding: 0 15px;
+}
+.article2 img {
+  width: 230px;
+}
+.article2 .contenu2 {
+    margin-left: 10px;
+    font-size: 1.1em;
+}
+#section #banner1 {
+	height: 200px;
+	background-color: #000;
+	padding: 0 30px;
+	align-items: center;
+	color: #FFF;
+}
+#titre1 {
+  text-align: center;
+  padding-top: 15px;
+  font-size: 2em;
+}
+#title {
+  text-align: center;
+  font-size: 1em;
+  padding-top: 9px;
+}
+/* .inputs input {
+  margin-left: 30px;
+}
+.inputs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  height: 30px;
+} */

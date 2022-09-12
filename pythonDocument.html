@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Documentaton de Python</title>
+  <link rel="stylesheet" href="css/pythonDocument.css">
+</head>
+<body>
+    <img src="img/p.png" style="width: 100%; height: 90px; position: fixed;" alt=""> <br><br><br>
+
+      <div class="content">
+
+            <div id="sidebar">
+              <div id="titre">
+                    <h1>Cours Complet Python</h1>
+              </div>
+              <h2><a href="#">INTRODUCTION AU COURS PYTHON</a></h2>
+                <ul>
+                    <li><a href="#ancre1">1-Introduction àn Python</a></li>
+                    <li><a href="#ancre2">2-L'environement de travail Python</a></li>
+                    <li><a href="#ancre3">3-Syntaxe de Base</a></li>
+                </ul>
+                <h2><a href="#">LES VARIABLES ET LES TYPES DE VARIABLES PYTHON</a></h2>
+                <ul>
+                    <li><a href="#ancre4">4-Les Variables Python</a></li>
+                    <li><a href="#ancre5">5-Les Types De données</a></li>
+                    <li><a href="#ancre6">6-Les Operateurs Python</a></li>
+                    <li><a href="#ancre7">7-Les Listes Python</a></li>
+                    <li><a href="#ancre8">8-Les Tuples Python</a></li>
+                    <li><a href="#ancre9">9-Les Dictionnaier Python</a></li>
+                    <li><a href="#ancre10">10-Les Ensembles Ou Set Python</a></li>
+                </ul>
+                  <h2><a href="#">LES STRUCTURES DE CONTRÖLESPYTHON</a></h2>
+                <ul>
+                    <li><a href="#">11-Les Structures Condictionnelles En Python</a></li>
+                    <li><a href="#">12-Créer Des Condictions Python Complexe</a></li>
+                    <li><a href="#"></a>Les Boucles Python for et while</li>
+                </ul>
+                  <h2><a href="#">LES FONCTIONS PYTHON</a></h2>
+                <ul>
+                    <li><a href="#">Introduction Aux Fonctions Python</a></li>
+                    <li><a href="#">Notion Avancées sur les Parametres des Fonctions</a></li>
+                    <li><a href="#">Contrôle des Valeurs de retour d'une Fonction</a></li>
+                    <li><a href="#"></a>La Portée des Variables</li>
+                    <li><a href="#"></a>Annexe 1: Quelques Fonctions Utiles</li>
+                </ul>
+            </div>
+            <div id="coursPython">
+                    <h1 id="ancre1">Introduction</h1>
+                <p>
+                    Python est un langage de programmation créé par Guido Van Rossum. La première version publique du langage est sortie en 1991. Son nom provient de la troupe de comiques anglais les Monty Python.
+                    Python est un langage interprété, qui se veut simple à comprendre, modulable et aux applications multiples. C’est aujourd’hui un des langages les plus utilisés et les plus plébiscités par les développeurs.
+                    Cette première leçon a pour but de présenter le langage Python et de poser quelques concepts fondamentaux relatifs aux langages de programmation qui nous seront utiles par la suite. <br>
+                    <h2>Python, un langage de programmation</h2>
+                    Un ordinateur est une machine dont la fonction principale est de traiter des données, c’est-à-dire d’exécuter des séries d’instructions pour effectuer différentes tâches. <br>
+                    En tant que développeurs, nous allons vouloir fournir nos séries d’instructions aux ordinateurs afin qu’ils exécutent certaines tâches précises dans un certain ordre. <br>
+                    Pour cela, il va falloir que l’ordinateur nous comprenne et il va donc falloir qu’on exprime nos instructions dans un langage qu’il comprend. Le souci, ici, est que les ordinateurs ne comprennent qu’un seul langage : le binaire ou “langage machine” qui est très opaque pour nous (les Humains) et très long à écrire. <br>
+                    Pour pallier à ce problème, certaines personnes ont créé ce qu’on appelle des langages de programmation. Le but premier de tout langage de programmation est de passer des instructions à l’ordinateur. <br>
+                    Schématiquement, on utilise des langages de programmation car il est plus facile de nous exprimer et d’expliciter nos séries d’instruction en suivant leurs conventions d’écriture plutôt que de passer nos instructions directement en binaire à l’ordinateur. <br>
+                    Le langage de programmation se charge de la conversion : il reçoit nos instructions et les transforme en binaire pour les passer à l’ordinateur afin que celui-ci les exécute. <br>
+                    Tous les langages de programmation ne sont pourtant pas égaux : certains sont plus facilement compréhensibles pour nous que d’autres et certains nous permettent de transmettre uniquement certaines instructions à l’ordinateur. <br>
+                    Python est un langage de programmation dit de “très haut niveau”. Cela signifie qu’il possède un haut niveau d’abstraction par rapport au langage machine. Pour le dire très simplement : plus un langage de programmation est de “haut niveau”, plus sa syntaxe se rapproche de notre langage (l’anglais) plutôt que du langage machine. Un langage de haut niveau est donc plus facile à comprendre et à utiliser qu’un langage de plus bas niveau. <br>
+                    <h2>Python, un langage interprété</h2>
+                    Comment font les langages de programmation pour transformer nos instructions en instructions compréhensibles par un ordinateur ? Ils leur faut un traducteur. Certains langages utilisent un interpréteur comme traducteur tandis que d’autres utilisent un compilateur. <br>
+                    Un interpréteur se distingue d’un compilateur par le fait que, pour exécuter un programme, les opérations d’analyse et de traductions sont réalisées à chaque exécution du programme (par un interprète) plutôt qu’une fois pour toutes (par un compilateur). <br>
+                    L’interprétation repose sur l’exécution dynamique du programme par un autre programme (l’interpréteur), plutôt que sur sa conversion en un autre langage (par exemple le langage machine).
+                    Ainsi, contrairement au compilateur, l’interpréteur exécute les instructions du programme (ou en évalue les expressions), au fur et à mesure de leur lecture pour interprétation. Du fait de cette phase sans traduction préalable, l’exécution d’un programme interprété est généralement plus lente que le même programme compilé. <br>
+                    En revanche, les langages interprétés sont généralement plus simples à appréhender puisqu’on ne passe pas par une étape de compilation avant d’exécuter son programme et la portabilité.
+                    En effet, un langage comme Python fonctionnera avec n’importe quel système d’opération (OS) du moment que l’OS en question possède l’interpréteur Python. Un compilateur, de l’autre côté, va produire un programme écrit en langage assembleur et ce langage assembleur va être différent pour chaque OS. Par conséquent, les programmes compilés ne peuvent s’exécuter que sur des ordinateurs dotés de la même architecture que l’ordinateur sur lequel ils ont été compilés.
+                    <h2>Python, un langage extensible et polyvalent</h2>
+                    Python est modulable et extensible : une fois qu’on connait les bases du langage, on va pouvoir relativement simplement ajouter de nouvelles fonctions ou modules pour étendre les possibilités de ce langage. <br>
+                    Python est un langage de programmation conçu dès le départ pour être “full stack”, c’est-à-dire pour avoir de multiples applications à la différence du PHP par exemple qui a clairement été imaginé pour fonctionner dans un contexte Web. <br>
+                    Ce langage est un langage orienté objet à la base mais Python supporte également d’autres paradigmes comme la programmation procédurale et fonctionnelle. Un paradigme est une “façon de coder” ou une “façon d’imaginer le code et de le structurer”. Nous reviendrons là dessus plus tard. <br>
+                    <h2>Un point sur les versions Python</h2>
+                    Avant de passer à la suite, j’aimerais vous parler des différentes versions du langage Python car, sur ce point, l’équipe de développement de Python a fait des choix particuliers. <br>
+                    En informatique, les langages évoluent par “version”. Les équipes qui créent un langage travaillent sans cesse à l’amélioration de celui-ci mais chaque changement fait sur le langage n’est pas immédiatement intégré au langage ni disponible au public. <br>
+                    Au contraire, une liste de modifications / ajouts sont faits au langage en arrière plan et, dès que l’équipe gérant l’évolution du langage juge les changements suffisamment importants et stables, une nouvelle “version” du langage qui incorpore ces changement est distribuée. <br>
+                    La première grosse mise à jour de Python date de 2000 avec la version Python 2. Les versions se sont ensuite enchainées normalement avec Python 2.1, 2.2, 2.3, etc. jusqu’en 2009 avec la sortie de Python 3. <br>
+                    Pour Python 3, l’équipe qui gère l’évolution du Python a fait le choix audacieux de partir sur de nouvelles bases et de casser la compatibilité avec les anciennes versions. <br>
+                    Généralement, lorsqu’un langage évolue et que de nouvelles versions paraissent, les équipes de développement font bien attention à proposer une compatibilité ascendante, c’est-à-dire à faire en sorte que les codes créés sous d’anciennes versions fonctionnent toujours avec les nouvelles versions des langages. En effet, sans ce principe de compatibilité, la plupart des programmes et des sites Web ne fonctionneraient pas puisque les développeurs de ceux-ci devraient absolument les modifier à chaque nouvelle version d’un langage utilisé pour coller aux nouvelles normes. <br>
+                    A l’inverse, le fait de proposer une comptabilité ascendante entre chaque version pose de vrais problèmes d’héritage aux développeurs d’un langage puisque ces derniers sont obligés de conserver certaines syntaxes et fonctionnalités totalement obsolètes. <br>
+                    Voulant modifier en profondeur leur langage et proposer une version beaucoup plus “propre” et au goût du jour, la Python Software Foundation (l’équipe chargée du développement du Python) a donc décidé de faire table rase pour Python 3 et de partir sur de nouvelles bases. <br>
+                    Le souci ici est que Python 2.x était déjà très populaire à l’époque et que cela allait mettre de nombreuses personnes dans l’embarras. L’équipe de Python a donc fait le choix de conserver deux versions du langage : Python 2.x et Python 3.x et de les faire évoluer de front. Pour être tout à fait précis, la version 3 est la version dont les fonctionnalités allaient continuer d’évoluer tandis que la version 2 n’allait recevoir que des mises à jour liées à la sécurité. <br>
+                    Aujourd’hui encore, on retrouve ces deux versions de Python qui co-existent. Pour nous, cependant, le problème ne se pose pas : nous travaillerons bien évidemment avec la dernière version en date de Python qui est à l’heure où j’écris la version 3.7.3. <br>
+
+                </p>
+                <p>
+                    <h1 id="ancre2">L'environement de travail Python:</h1>
+                    Dans cette leçon, nous mettons en place notre environnement de travail en nous équipant des logiciels nécessaires pour pouvoir développer en Python. <br>
+                    <h2>Coder en Python : simple et gratuit</h2>
+                    Python est un langage Open Source. Cela signifie que ses sources et son interpréteur sont disponibles au public et donc que n’importe qui peut commencer à développer ses propres programmes Python gratuitement. <br>
+                    Pour coder en Python, un seul programme va être strictement obligatoire : l’interpréteur Python qui va pouvoir être utilisé de manière dynamique et nous afficher les résultats de nos codes immédiatement. <br>
+                    En pratique, cependant, nous voudrons souvent enregistrer nos différents scripts dans des fichiers plutôt que d’écrire des séries d’instructions à exécuter immédiatement. Pour cela, nous avoir besoin d’un éditeur de texte ou d’un IDE (Environnement de Travail Intégré).
+                    <h2>L’interpréteur Python</h2>
+                    Python est un langage interprété, ce qui signifie qu’on va avoir besoin d’un programme nommé interpréteur pour convertir nos instructions Python en un langage compréhensible par notre ordinateur. <br>
+                    L’interpréteur Python est disponible en téléchargement gratuit sur le site officiel du langage, dans la rubrique téléchargement :  <a href="#">https://www.python.org/downloads/</a> . <br>
+                    Sur cette page, commencez par télécharger la dernière version stable de Python qui correspond à votre système. L’interpréteur sera parmi les fichiers téléchargés. <br>
+                    Notez que si vous utilisez un Mac un interpréteur Python devrait déjà être installé sur votre machine par défaut. Cependant, l’interpréteur pré-installé risque de correspondre à une ancienne version et nous voulons dans ce cours travailler avec la dernière version stable du langage (Python 3.7.3 à l’heure de ce tutoriel). <br>
+                    Une fois que vous avez téléchargé la ressource Python disponible sur le site officiel, ouvrez la en double cliquant dessus. Un processus d’installation démarre. Si vous êtes sur Windows, cochez la case “Ajouter Python 3.x au PATH”. Suivez ensuite le processus d’installation comme pour n’importe quel autre logiciel. <br>
+                    Vous venez d’installer l’interpréteur Python ainsi que d’autres ressources pour vous aider dans vos développements Python, notamment IDLE et Python Launcher si vous utilisez un Mac. <br>
+                    IDLE est un environnement de développement intégré spécialement pour Python qui nous permet d’exécuter directement du code Python. Python Launcher permet lui d’exécuter du code Python créé dans des fichiers séparés .py en double cliquant simplement sur ces fichiers. Ces deux logiciels sont extrêmement puissants et pratiques, même si nous ne nous en servirons pas dans ce cours pour faciliter la compréhension et le suivi de tous. <br>
+                    Pour exécuter nos scripts Python, il va falloir les passer à l’interpréteur. Pour cela, nous allons utiliser l’invite de commande (Windows) ou le terminal (Mac). <br>
+                    L’invite de commande se trouve dans le menu Démarrer de Windows sous le nom cmd. Le terminal se trouve dans le dossier Applications, puis Utilitaire de Mac. Dès que vous trouvez l’invite de commande ou le terminal, ouvrez le. Une fenêtre noire devrait apparaitre. <br>
+                    Une fois que vous êtes dans l’invite de commande ou dans le terminal, commencez par vérifier que l’interpréteur Python a bien été installé. Pour cela, tapez la commande python -V (avec un V majuscule) et pressez la touche Entrée. Si vous êtes sur Mac, Python 2.7 devrait déjà être installé et sera probablement la version renvoyée. Tapez plutôt la commande python3 -V. La version de l’interpréteur Python installée devrait vous être renvoyée. <br>
+                    Pour appeler l’interpréteur, tapez simplement python3 (ou python3.7 dans le cas où il y aurait une ambiguïté) (Mac) ou python (Windows). Si la version de l’interpréteur vous est renvoyée te que vous voyez un triple chevron $gt;$gt;$gt;, c’est gagné ! Ce triple chevron est le moyen pour l’interpréteur de nous dire “je suis prêt à recevoir la prochaine instruction”. <br>
+                    A partir de là, nous avons deux options : on va pouvoir soit directement écrire nos instructions Python dans l’invite de commande ou dans le terminal pour les exécuter immédiatement, soit créer des fichiers de script Python avec l’extension .py avec un éditeur de texte et les passer ensuite à l’interpréteur. Dans l’image ci-dessus, par exemple, j’ai tapé et exécuté une première instruction Python print() qui sert simplement à afficher un message. <br>
+                    Ecrire son code directement dans l’invite de commande / le terminal est très pratique pour tester rapidement un code. Cependant, en conditions “réelles”, c’est-à-dire lorsque vous devrez créer de vrais programmes contenant potentiellement plusieurs scripts ou lorsque vous voudrez distribuer votre code, vous stockerez vos instructions dans des fichiers .py que vous allez créer avec un éditeur de texte ou un IDE. <br>
+                    <h2>L’éditeur de texte</h2>
+                    Si vous avez décidé de suivre ce tutoriel sur Python, je suppose que vous savez déjà ce qu’est un éditeur de texte. <br>
+                    Un éditeur de texte nous permet tout simplement d’écrire des lignes de code et d’enregistrer nos fichiers au bon format. <br>
+                    Il existe des centaines d’éditeur prêt à télécharger sur le Web et la majorité d’entre eux sont gratuits. Je n’ai pas de conseil spécifique à vous donner quant au choix de votre éditeur de texte : essayez simplement d’en trouver un avec lequel vous êtes à l’aise et si possible installez plutôt un IDE (Environnement de Travail Intégré) qu’un simple éditeur. <br>
+                    Les IDE disposent de fonctionnalités supplémentaires comme des mécanismes d’auto-complétion du code ou encore de systèmes de détection des erreurs de syntaxe dans un code et de proposition de modification. <br>
+                    Pour ma part, dans ce cours, j’utiliserai l’IDE Visual Studio Code de Microsoft mais vous pouvez utiliser Brackets, Atom, Sublime Text ou encore Komodo si vous préférez. <br>
+                    Notez par ailleurs qu’il existe certains éditeurs spécialement conçus pour écrire du code Python dont le célèbre PyCharm notamment. <br>
+
+                </p>
+                <p>
+                  <h1 id="ancre3">Syntaxe de base et exécution d’instructions Python</h1>
+                  Dans cette leçon, nous allons découvrir quelques éléments de syntaxe de base de Python. Nous allons également exécuter nos première instructions Python en utilisant l’interpréteur de manière interactive ou en créant un fichier Python qu’on va ensuite passer à l’interpréteur. <br>
+                  <h2>Créer un fichier Python</h2>
+                  Nous avons deux choix pour exécuter du code Python : on peut soit écrire directement notre code dans l’invite de commande (Windows) ou dans le terminal (Mac) afin que l’interpréteur Python interprète directement notre code et nous renvoie son résultat ou on peut créer des fichiers Python avec un ensemble d’instructions à l’intérieur et qu’on va ensuite passer à l’interpréteur. <br>
+                  L’intérêt principal d’un fichier est qu’il peut être sauvegardé et distribué. En conditions réelles, vous utiliserez donc souvent votre éditeur de texte et créerez des fichiers Python pour mener à bien des projets. <br>
+                  Dans ce cours, j’écrirai directement dans mon terminal pour vous montrer les résultats d’instructions simples et nous ne créerons des fichiers que lorsque cela sera nécessaire. Cependant, pour cette première leçon concrète, je voulais tout de même vous montrer comment créer un fichier Python et comment exécuter ce fichier. <br>
+                  Pour créer un fichier Python, nous allons déjà ouvrir notre éditeur de texte, allons ouvrir un nouveau fichier et enregistrer ce fichier en lui donnant une extension .py. On peut appeler ce fichier cours.py par exemple et l’enregistrer dans un dossier Python sur notre bureau. <br>
+                  Ici, on commence par enregistrer notre fichier au format Python avant même d’écrire un quelconque code car cela va permettre à notre éditeur de reconnaitre le type de code qu’on souhaite écrire et d nous proposer des fonctionnalités relatives à cela. Par ailleurs, il est possible que votre éditeur vous propose d’installer des extensions spécifiques Python pour faciliter l’écriture, l’affichage et le debugging de votre code. Si c’est le cas, n’hésitez pas à les installer. <br>
+                  Ensuite, ajoutez les lignes de code suivantes dans votre fichier (nous allons expliquer par la suite ce qu’elles signifient) : <br>
+                 <h2>Exécuter un fichier Python</h2>
+                  Pour exécuter un fichier Python et obtenir le résultat des opérations faites dans ce fichier, commencez déjà par ouvrir votre invite de commande ou votre terminal. <br>
+                  Ici, si vous avez bien ajouté Python au PATH, vous n’avez qu’à taper cours.py pour exécuter le code du fichier “cours.py”. Si votre système possède plusieurs versions de Python, comme c’est le cas sur Mac, il faudra préciser la version utilisée : on tapera alors <a href="#" style="text-transform: none;">python3 cours.py</a> <br>
+                  Si Python n’a pas été ajouté au PATH, il va falloir préciser où le fichier se trouve. Pour cela, on va commencer par taper la commande cd Desktop. La commande cd signifie “change directory” (“changer de dossier”). <br>
+                  Ensuite, on n’a plus qu’à préciser l’emplacement de notre fichier par rapport à notre bureau (Desktop), c’est à dire dans notre cas Python/cours.py (Mac) ou Python\cours.py (Windows) pour exécuter notre fichier, en précisant éventuellement également une version si plusieurs versions sont installées sur notre système (python3 Python/cours.py pour Mac). <br>
+                  <h2>Exécuter du Python en tapant directement dans l’invite de commande ou le terminal</h2>
+                  L’interpréteur Python peut être utilisé de manière interactive, c’est-à-dire qu’on va pouvoir directement lui fournir du code Python à exécuter et il nous renverra les résultats immédiatement. <br>
+                  Cette fonctionnalité est très utile lorsqu’on souhaite tester rapidement des bouts de code ou pour l’apprentissage. <br>
+                  Pour utiliser l’interpréteur Python de cette manière, on va déjà devoir l’appeler depuis l’invite de commande ou le terminal. Pour cela, on écrit la commande Python3.7 et on presse Entrée pour valider. <br>
+                  Ensuite, on a plus qu’à écrire nos différentes instructions et à presser Entrée afin que l’interpréteur les interprète immédiatement. <br>
+                  <h2>Syntaxe de base de Python : indentation, commentaires et print()</h2>
+                  Chaque langage informatique est basé sur une série de règles et de conventions. La syntaxe d’un langage définit ses différents éléments et la façon dont on va pouvoir et devoir les utiliser. <br>
+                  J’aimerais pour le moment m’arrêter sur deux éléments de syntaxe de base que sont les commentaires et l’indentation ainsi que sur la fonction print(). <br>
+                  <h2>Les commentaires Python </h2>
+                  Les commentaires sont des éléments de langage qu’on retrouve dans de nombreux langages de programmation. <br>
+                  Les commentaires servent à “commenter” le code : ils vont être ignorés lors de l’exécution du code (ils n’auront aucun impact sur le script) et vont donc être totalement transparents pour l’utilisateur final. <br>
+                  On utilise généralement les commentaires pour documenter un code (pour soi ou pour d’autres développeurs si le code a vocation à être distribué) ou pour empêcher son exécution. En Python, on utilise le signe # pour écrire un commentaire dans notre code. <br>
+                  Python n’a pas de syntaxe particulière pour écrire des commentaires multi-lignes. Pour écrire un commentaire sur plusieurs lignes, on insérera un # au début de chaque ligne. <br>
+                  <h2>L’indentation Python </h2>
+                  L’indentation correspond au fait de créer des retraits au niveau de certaines lignes de code. Dans la grande majorité des langages, l’indentation n’a qu’une visée esthétique : elle permet à un script d’être plus lisible pour un développeur. <br>
+                  Généralement, une bonne indentation est censée représenter les dépendances au sein d’un code : on ajoutera un retrait à chaque fois qu’une instruction est incluse / dépend d’une autre. <br>
+                  En Python, l’indentation a un tout autre rôle : elle est utilisée par Python pour définir des blocs de code, c’est-à-dire pour indiquer à l’interpréteur quelle instruction appartient à quelle autre. <br>
+                  Si on indente mal notre code Python, celui-ci ne s’exécutera tout simplement pas et Python renverra une erreur. Pas de panique, nous allons apprendre au cours de ce cours à quelle moment indenter. Cela est cependant relativement évident et ne devrait pas vous poser de problème : dès qu’il y a une relation de dépendance, il faudra ajouter un retrait (une fabulation). <br>
+                  Dans le code ci-dessus, par exemple, nous avons utilisé une structure conditionnelle if. Le principe de cette structure est simple : on lui fournit un test et SI le test est validé, alors on exécute un code. Le code à exécuter dépend du résultat du test; on effectuera donc un retrait pour mentionner ce code afin que Python puisse bien s’apercevoir qu’il dépend de la structure conditionnelle. <br>
+                  Si vous avez l’habitude d’autres langages de programmation comme le PHP par exemple cela peut être un peu déconcertant au départ. Vous pouvez alors considérer que l’indentation remplace l’usage des accolades. <br>
+                  <h2>La fonction print</h2>
+                  Les fonctions sont d’autres éléments de langage que nous étudierons plus tard. Grosso-modo, une fonction est définie par un nom et une série d’instructions. Lorsqu’on appelle une fonction (en utilisant son nom et un couple de parenthèses juste derrière), elle exécute toutes les instructions qu’elle contient. Les fonctions servent généralement à effectuer une action précise qui peut être plus ou moins complexe. <br>
+                  La fonction print() permet tout simplement d’afficher le message qu’on va lui passer entre ses parenthèses. A première vue, la fonction print() ne parait pas très utile, et c’est pourtant l’une des fonctions qu’on utilisera le plus. <br>
+                  En effet, cette fonction va être très précieuse puisqu’elle va également nous permettre d’afficher des résultats auquel on n’a pas directement accès. Nous illustrerons cela dans la suite de ce cours; faites moi confiance pour le moment. <br>
+
+                </p>
+                <p>
+                  <h1 id="ancre4">Les variables Python</h1>
+                  Dans cette leçon, nous allons découvrir un élément fondamental des langages de programmation : les variable. Nous allons expliquer ce que sont les variables en informatique, les usages qu’on va pouvoir en faire et comment créer des variables Python. <br>
+                  <h2>Qu’est-ce qu’une variable ?</h2>
+                  Une variable, dans le domaine de la programmation informatique, est un conteneur qui sert à stocker une valeur. Les variables possèdent deux caractéristiques fondamentales : <br>
+                  Les variables ont une durée de vie limitée (une variable ne vit généralement que le temps de l’exécution d’un script ou de la fonction qui l’a définie), ce qui signifie qu’on ne va pas pouvoir utiliser les variables pour stocker des données de manière pérenne ;
+                  La valeur d’une variable peut varier : les variables peuvent peuvent stocker différentes valeurs au cours de leur vie (la nouvelle valeur remplaçant l’ancienne).
+                  Les variables donc être au coeur de nos scripts puisqu’elles vont nous permettre de conserver des valeurs le temps d’un script et d’effectuer toutes sortes de manipulations sur ces valeurs en toute simplicité. <br>
+                  <h2>Comment déclarer une variable en Python ?</h2>
+                  Python ne possède pas de syntaxe particulière pour créer ou “déclarer” une variable : les variables Python sont automatiquement créées au moment où on leur assigne une valeur. <br>
+                  Pour créer une variable en Python, on va donc devoir choisir un nom et affecter une valeur à ce nom, c’est-à-dire stocker une valeur dans notre variable. <br>
+                  Le choix du nom pour nos variables est libre en Python. Il faut cependant respecter les règles usuelles suivantes : <br>
+                  Le nom doit commencer par une lettre ou par un underscore ;
+                  Le nom d’une variable ne doit contenir que des caractères alphanumériques courants (pas d’espace dans le nom d’une variable si de caractères spéciaux comme des caractères accentués ou tout autre signe) ;
+                  On ne peut pas utiliser certains mots qui possèdent déjà une signification spéciale pour le langage (on parle de mots “réservés”).
+                  Notez que les noms de variables en Python sont sensibles à la casse, ce qui signifie qu’on va faire une différence entre l’emploi de majuscules et de minuscules : un même nom écrit en majuscules ou en minuscules créera deux variables totalement différentes. <br>
+                  Pour affecter ou “assigner” une valeur à une variable, nous allons utiliser un opérateur qu’on appelle opérateur d’affectation ou d’assignation et qui est représenté par le signe =. Attention, le signe = ne signifie pas en informatique l’égalité d’un point de vue mathématique : c’est un opérateur d’affectation. <br>
+                  Le signe = ne sert pas à dire que la valeur est égale au nom de variable ou que la variable “vaut” cette valeur, il indique simplement qu’on affecte ou qu’on stocke une certaine valeur dans un conteneur. <br>
+                  D’un point de vue mathématique, par exemple, écrire x = x + 2 n’a aucun sens car la variable x ne peut être égale qu’à elle même. En informatique, cependant, c’est tout à fait possible puisque l’opérateur = n’est pas un opérateur d’égalité mais d’affectation. Ecrire x = x + 2 signifie qu’on affecte une nouvelle valeur à x qui est égale à l’ancienne valeur de x à laquelle on ajoute 2. <br>
+                  Notez déjà qu’on va également pouvoir effectuer des affectations multiples en Python, c’est-à-dire affecter plusieurs valeurs à plusieurs variables très facilement en utilisant la syntaxe nom_variable_1, nom_variable_2, nom_variable_3 = valeur1, valeur2, valeur3. <br>
+                  <h2>Que peut stocker une variable Python ?</h2>
+                  Les variables vont pouvoir stocker différents types de valeurs comme des nombres, des chaines de caractères, des booléens, et plus encore. <br>
+                  Il est important de connaitre le type de valeur stocké dans une variable car nous n’allons pas pouvoir effectuer les même opérations avec une variable qui stocke un nombre ou avec une variable qui stocke une chaine de caractères par exemple. <br>
+                  Nous étudierons les spécificités liées à chaque type de valeur que peut stocker une variable Python dans la prochaine leçon. <br>
+                  <h2>Afficher et modifier le contenu d’une variable Python</h2>
+                  Nous allons pouvoir réaliser toutes sortes d’opérations avec nos variables. La plus basique d’entre elles consiste à afficher le contenu d’une variable. Pour afficher la valeur d’une variable Python, il suffit d’écrire son nom, ou éventuellement d’utiliser la fonction print() en renseignant le nom de la variable entre les parenthèses/ <br>
+                  Comme je l’ai précisé plus haut, l’une des caractéristiques fondamentales des variables va être de pouvoir stocker différentes valeurs durant sa vie. Ainsi, on peut tout à fait affecter une nouvelle valeur à une variable. Une variable « classique » ne va pouvoir stocker qu’une valeur à la fois. En affectant une nouvelle valeur à une variable, la valeur précédente est ainsi écrasée. <br>
+                  Pour comprendre ce code, vous devez savoir qu’ici les instructions sont exécutées linéairement, c’est-à-dire dans leur ordre d’écriture. On commence par affecter la valeur 29 à notre variable age et la valeur Pierre à notre variable prenom, puis on affiche le contenu de ces variables. <br>
+                  On affecte ensuite de nouvelles valeurs dans nos variables. Ces nouvelles valeurs remplacent (“écrasent”) les précédentes. Lorsqu’on affiche à nouveau le contenu de nos variables, les valeurs renvoyées sont les dernières stockées. <br>
+                  <h2>Quelle est l’utilité des variables Python ?</h2>
+                  Les variables sont des éléments de base présents dans la quasi-totalité des langages de programmation car elles vont s’avérer indispensables dans de très nombreuses situations. <br>
+                  Il est difficile à ce niveau du cours d’illustrer concrètement la puissance des variables. Le grand intérêt des variables va résider dans le fait qu’on va disposer d’un nom fixe (un “label”) qui va nous servir à manipuler des valeurs qui peuvent changer ou qu’on peut ne pas encore connaitre. <br>
+                  Imaginons par exemple qu’on crée un programme qui va effectuer des calculs à partir d’une valeur qui va lui être envoyée uniquement lorsque ce programme sera exécuté. Lors de la création du programme, on ne connait pas cette valeur et cette valeur va pouvoir être différente entre différentes exécutions du programme. <br>
+                  On va pouvoir indiquer que cette valeur (inconnue pour le moment) devra être stockée dans telle variable au début du programme et ensuite définir les différentes opérations qui devront être effectuées sur cette valeur en utilisant le nom de la variable (qui sera remplacée par sa valeur effective lorsque le programme s’exécutera). <br>
+
+                </p>
+                <p>
+                  <h1 id="ancre5">Les types de données ou types de valeurs Python</h1>
+                  Dans cette leçon, nous allons définir ce qu’est un type de données et passer en revue les types de données Python les plus courants et simples à appréhender. <br>
+                   <h2>Qu’est-ce qu’un type de données ?</h2>
+                  En programmation, les données qu’on va pouvoir manipuler avec un langage sont généralement classées par “type”. <br>
+                  Un “type” de données pour un langage est défini par les manipulations qu’on va pouvoir faire sur ces données : on va pouvoir effectuer les mêmes opérations sur chaque donnée d’un même type et des opérations différentes sur différents types de données. <br>
+                  Prenons un nombre entier par exemple. Il semble tout à fait logique de pouvoir effectuer des opérations mathématiques de base avec ce nombre : addition, soustraction, multiplication, etc. En revanche, on ne va pas pouvoir effectuer les mêmes opérations / manipulations sur un texte, puisque multiplier un texte par quelque chose par exemple n’a aucun sens. <br>
+                  <h2>Les types de données Python</h2>
+                  Python définit de nombreux types de données qu’on va pouvoir stocker dans nos variables et manipuler à loisir ensuite : nombres entiers, décimaux, complexes, chaines de caractères, booléens, listes, tuples, dictionnaires, etc. <br>
+                  Dans cette leçon, nous allons nous contenter de passer en revue les types de données les plus simples à se représenter (nombres, chaines et booléens). Les autres types de données feront l’objet de leçons séparées. <br>
+                  <h2>Les types numériques int, float et complex</h2>
+                  Python définit trois types de valeurs numériques supportées :
+                  Le type int qui représente tout entier positif ou négatif ;
+                  Le type float qui représente les nombres décimaux et certaines expressions scientifiques comme le e pour désigner une exponentielle par exemple; <br>
+                  Le type complex qui représente les nombres complexes ou nombres imaginaires et qui se sert de la lettre j pour représenter la partie imaginaire d’un nombre. <br>
+                  Le type de données “nombre entier” ou int pour être technique (“int” = “integer” = entier) couvre tous les nombres entiers positifs ou négatifs. On va pouvoir effectuer toutes sortes d’opérations arithmétiques avec ce premier type de données : addition, soustraction, multiplication, division, élévation à la puissance, etc. <br>
+                  Pour effectuer des opérations arithmétiques entre différentes valeurs numérique, nous allons devoir utiliser des opérateurs arithmétique (+ pour l’addition, - pour la soustraction, etc.). <br>
+                  On va pouvoir effectuer ces opérations directement entre nombres et se servir de Python comme d’une calculatrice ou affecter ces nombres à des variables et utiliser nos variables pour effectuer nos opérations : <br>
+                  Ici, on commence par effectuer des opérations entre nombres : addition, soustraction, multiplication, division et élévation à la puissance. Notez que pour réaliser une division entière, on utilise l’opérateur //. On peut également utiliser l’opérateur / pour réaliser une division “classique” mais dans ce cas le résultat sera toujours considéré comme étant de type float (nombre décimal). Finalement, on utilise l’opérateur ** pour élever un nombre à la puissance. <br>
+                  On peut également stocker des nombres dans des variables et utiliser ces variables pour effectuer nos calculs. Ici, on commence par définir une variable x et on lui attribue la valeur 5. On effectue ensuite différentes opérations. Notez que durant tous ces calculs x continue de stocker 5 puisqu’on n’affecte jamais de nouvelles valeurs à x. Finalement, on définit une deuxième variable y = 10 et on demande à Python de calculer x + y, c’est-à-dire de nous donner le résultat de l’addition des deux valeurs contenues dans x et dans y. <br>
+                  Le type de données “nombre décimal” ou float couvre tous les nombres décimaux (c’est-à-dire les nombres à virgule) ainsi que certaines expressions scientifiques comme le e qui désigne une exponentielle. <br>
+                  Attention ici : dans le monde de la programmation, les notations anglo-saxonnes sont la norme. Il faudra donc bien faire attention à utiliser un . et non pas une , pour les décimaux. <br>
+                  Nous allons grosso-modo pouvoir réaliser les mêmes opérations avec des données de type float qu’avec des données de type int (même si le traitement en arrière plan va être différent). <br>
+                  Il y a différentes choses à noter par rapport au type float en Python : <br>
+                  Toute opération arithmétique entre nombres de type float donne un résultat de type float ; <br>
+                  Toute opération arithmétique entre nombres de types int et float donne un résultat de type float ; <br>
+                  La division classique donne toujours un résultat de type float. <br>
+                  On effectue plusieurs opérations arithmétiques d’un coup sur nos dernières lignes dans l’exemple ci-dessus. Dans ce cas là, il faudra faire attention à l’ordre des opérations. L’ordre des opérations va être le même qu’en mathématiques : les calculs de puissance seront effectués en priorité, puis la multiplication et la division, puis enfin l’addition et la soustraction. <br>
+                  On va également pouvoir utiliser des parenthèses pour imposer un ordre de priorité de calculs différents. Dans ce cas là, ce qui se trouve entre parenthèses sera calculé en premier. <br>
+                  On effectue plusieurs opérations arithmétiques d’un coup sur nos dernières lignes dans l’exemple ci-dessus. Dans ce cas là, il faudra faire attention à l’ordre des opérations. L’ordre des opérations va être le même qu’en mathématiques : les calculs de puissance seront effectués en priorité, puis la multiplication et la division, puis enfin l’addition et la soustraction. <br>
+                  On va également pouvoir utiliser des parenthèses pour imposer un ordre de priorité de calculs différents. Dans ce cas là, ce qui se trouve entre parenthèses sera calculé en premier. <br>
+                  Finalement, le type de données “nombre complexe” ou complex représente les nombres complexes. On va utiliser la lettre j ou J pour représenter la partie complexe d’un nombre. Comme la plupart d’entre vous n’auront que rarement affaire aux nombres complexes et que ce cours n’est pas un cours de mathématiques, je n’entrerai pas dans le détail ici. <br>
+                  <h2>Le type str ou chaine de caractères</h2>
+                  Les chaines de caractères sont ce qu’on appelle communément du texte. Pour définir une chaine de caractères ou pour stocker une chaine de caractères dans une variable, il faudra l’entourer de guillemets simples ou doubles droits. <br>
+                  Si notre chaine de caractères contient elle même des guillemets simples (apostrophes) ou doubles, il faudra les échapper les uns ou les autres en fonction du délimiteur choisi pour qu’ils soient correctement interprétés car sinon Python pensera qu’ils servent à indiquer la fin de la chaine. Le caractère d’échappement en Python est l’antislash \. <br>
+                  Dans l’exemple ci-dessus, on veut afficher et stocker la chaine Je m’appelle “Pierre Giraud” qui contient à la fois des guillemets simples ou apostrophes et des guillemets doubles. Il va donc falloir qu’on échappe les uns ou les autres en fonction du caractère de délimitation de chaine choisi afin d’indiquer au Python que les guillemets simples ou doubles à l’intérieur de notre chaine ne représentent pas la fin de la chaine, c’est-à-dire pour lui indiquer qu’ils ne possèdent pas ce sens spécial de délimiteurs. <br>
+                  Notez qu’on peut également utiliser une syntaxe alternative utilisant des triples guillemets simples ou doubles pour entourer notre chaine et qui nous dispense ainsi d’avoir à échapper les apostrophes et les guillemets dans notre chaine : <br>
+                  Lorsqu’on utilise l’interpréteur en mode interactif, comme on le fait dans ce cours, l’interpréteur affiche les chaines entre guillemets simples. On peut utiliser la fonction print() pour afficher les chaînes de manière plus lisible, en retirant notamment les guillemets simples et doubles : <br>
+                  J’ai dit plus haut que pour définir une chaine de caractères il fallait l’entourer de guillemets simples ou doubles droits. Réciproquement, toute valeur entourée par des guillemets simples ou doubles sera considéré par Python comme une valeur de type str (“str” = “string” = chaine de caractères).
+                  Ainsi, si on stocke un ou plusieurs caractères représentant des chiffres comme “1”, “2”, “123”, etc. en les entourant de guillemets simples ou doubles ceux-ci seront considérés comme des valeurs de type str et non comme des valeurs de type int, code>float ou complexe et on ne pourra pas effectuer les mêmes opérations. <br>
+                  Comme vous pouvez le voir, on n’obtient pas du tout les mêmes résultats lorsqu’on additionne deux nombres ou lorsqu’on additionne (ou plus exactement concatène) deux chaines. <br>
+                  Lorsqu’il est utilisé avec deux chaines, l’opérateur + est un opérateur de concaténation et pas d’addition. “Concaténer” signifie “mettre bout à bout”. Nous reparlerons de ce concept dans la prochaine leçon. <br>
+                  Finalement, vous pouvez également remarquer que Python nous renvoie une erreur lorsqu’on tente d’additionner / de concaténer un entier avec une chaine.
+                  <h2>Le type de valeurs bool ou booléen</h2>
+                  Le dernier type de valeurs simple Python que je tenais à vous présenter est le type bool (pour “booléen”). <br>
+                  Le type de valeur booléen est un type qui ne contient que deux valeurs qui servent à représenter deux états. Les deux valeurs sont True (vrai) et False (faux). Attention en Python à bien indiquer des majuscules car dans le cas contraire Python ne reconnaitra pas ces booléens. <br>
+                  Pour stocker un booléen dans une variable, il ne faut pas utiliser de guillemets : si on les utilise, ce seront les chaines de caractères “True” et “False” qui seront stockés et on ne va pas pouvoir effectuer les mêmes opérations. <br>
+                  Les valeurs booléennes sont très utilisées en informatique. Elles sont notamment très utiles pour valider ou invalider un test et sont au coeur des différentes structures de contrôle en général. <br>
+                   <h2>Utiliser la fonction type() pour connaitre le type d’une valeur</h2>
+                  On voudra souvent s’assurer qu’une variable contient bien une valeur d’un certain type, notamment pour pouvoir effectuer différentes manipulations avec cette variable. <br>
+                  Pour connaitre le type de valeur stockée dans une variable, on peut utiliser la fonction Python type(). On va passer la variable à tester en argument de cette fonction (c’est-à-dire écrire le nom de la variable entre les parenthèses de la fonction). La fonction type() va alors tester la valeur contenue dans la variable et renvoyer le type de cette valeur. <br>
+                  Ne faites pas attention pour le moment à l’indication “class” également renvoyée par la fonction type(), nous verrons ce que ça signifie bien plus tard dans ce cours. <br>
+
+                </p>
+
+
+          
+
+
+
+            </div>
+      </div>
+</body>
+</html>
